@@ -13,7 +13,7 @@ const Categories = db.Category
 const productController = {
     index: (req,res)=>{
 
-        if(req.session.user){
+        
             let products = Products.findAll({include:['brand','color','category']},{
                 where:{
                     section:'Destacado'
@@ -31,41 +31,17 @@ const productController = {
             Promise
             .all([products,sale])
             .then(([products,sale]) => {
+                console.log(products)
+                console.log('-----------------');
+                console.log(sale);
                 return  res.render('products/index',{user:req.session.user,sale,products})
             })
-        } else {
-            let products = Products.findAll(
-                {
-                    include:['brand','color','category'],
-                
-                where:{
-                    section:{
-                        [Op.eq]: 'Destacado'
-                    }
-                },
-                limit:8
-            })
-            let sale = Products.findAll({include:['brand','color','category'],
-                where:{
-                    section:{
-                        [Op.eq]: 'Ofertas'
-                    }
-                },
-                limit:4
-            })
-    
-    
-            Promise
-            .all([products,sale])
-            .then(([products,sale]) => {
-                return  res.render('products/index',{sale,products})
-            })
-        }
+       
        
     },
     all: (req,res)=>{
     
-        if(req.session.user){
+        
             Products.findAll({include:['brand','color','category']})
             .then(products =>
                 {
@@ -74,17 +50,7 @@ const productController = {
                 
                 })
                 
-        }
-        else{
-
-            Products.findAll({include:['brand','color','category']})
-            .then(products =>
-                {
-                    console.log(products)
-                    res.render('products/products',{products})
-                
-                })
-        }
+       
 
 
             
@@ -94,7 +60,7 @@ const productController = {
     edit: (req,res)=>{
 
     
-        if(req.session.user){
+      
 
             let id=req.params.id;
             let producto=Products.findByPk(id);
@@ -111,25 +77,12 @@ const productController = {
 
 
            
-        }else{
-            let id=req.params.id;
-            let producto=Products.findByPk(id);
-            let colors = Colors.findAll();
-            let categories = Categories.findAll();
-            let brands = Brands.findAll();
-    
-            Promise
-           .all([producto,colors,categories,brands])
-           .then(([producto,colors,categories,brands])=>
-            {
-                res.render('products/editProduct',{user:req.session.user,producto,colors,categories,brands})
-            })
-        }
+       
        
     },
     add: (req,res)=>{
 
-        if(req.session.user){
+        
 
             let brands = Brands.findAll();
             let colors= Colors.findAll();
@@ -145,19 +98,7 @@ const productController = {
 
 
            
-        }else{
-            let brands = Brands.findAll();
-            let colors= Colors.findAll();
-            let categories = Categories.findAll();
-    
-            Promise
-            .all([brands,colors,categories])
-            .then(
-                ([brands,colors,categories]) => {
-                    res.render('products/productAdd',{ brands,colors,categories})
-                }
-            );
-        }
+       
        
 
     },
@@ -168,6 +109,7 @@ const productController = {
             stock_min:req.body.stock_min,
             stock_max:req.body.stock_max,
             stock:req.body.stock,
+            section:req.body.section,
             categoryId:req.body.categoryId,
             colorId:req.body.colorId,
             brandId:req.body.brandId,
@@ -193,7 +135,7 @@ const productController = {
 
     detail: function (req,res) {
 
-        if(req.session.user){
+       
 
             let sale = Products.findAll({include:['brand','color','category'],
             where:{
@@ -214,35 +156,13 @@ const productController = {
                 })
 
             
-        }else{
-            let sale = Products.findAll({include:['brand','color','category'],
-            where:{
-                section:{
-                    [Op.eq]: 'Ofertas'
-                }
-            },
-            limit:4
-        })
-            
-           let producto =  Products.findByPk(req.params.id)
-    
-    
-           Promise
-           .all([sale,producto])
-            .then(([sale,producto]) =>{
-                    res.render('products/productDetail',{sale,producto})
-                })
-        }
-
+       
        
     },
     cart: (req,res)=>{
 
-        if(req.session.user){
+        
             res.render('products/productCart',{user:req.session.user})
-        }else{
-            res.render('products/productCart')
-        }
         
     },
     // Update - Method to update
