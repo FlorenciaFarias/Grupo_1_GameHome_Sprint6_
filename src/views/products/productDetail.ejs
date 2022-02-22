@@ -26,12 +26,12 @@
                <p>  <i class="fas fa-check"></i>Stock disponible</p>
                 <p> <i class="fas fa-truck-moving"></i>Envios a todo el pais</p>
             </div>
-
+            <% if ((locals.user && locals.user.rolId == 2)|| locals.user == undefined) { %>
             <form action="/carrito" method="get">
                     <button type="submit" name="" id="" value="Sumar al carrito" class="agregar-boton">Agregar al carrito</button>
                 </form>
-                    
-                <% if (typeof user !='undefined') {%>
+                <% } %> 
+                <% if (typeof user !='undefined' && user.rolId == 1) {%>
                     <form action="/products/<%=producto.id%>/edit" method="get">
                         <button type="submit" name="" id="" class="editar-boton">Edición de producto</button>
                      </form>

@@ -91,6 +91,11 @@
 
         <nav>
                 <ul>
+                    <% if (locals.user && locals.user.rolId == 1) { %>
+                     
+                      <li><a href="/products/create">Cargar producto</a></li>
+
+                    <% } %>
                     <li><a href="/products">Todos los productos</a></li>
                     <li><a href="#">PC/Notebook</a></li>
                     <li><a href="#">Armá tu pc</a></li>
