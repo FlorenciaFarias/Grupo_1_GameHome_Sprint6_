@@ -1,7 +1,7 @@
 ## :spiral_calendar: Parte de las reuniones que llevamos con el equipo:
-*** 1)Para trabajar sobre el proyecto
+*** Para trabajar sobre el proyecto
 2)Para ayudarnos a desarrollar y cumplir con las tareas asignadas individualmente para el Sprint.
-Este es un resumen de dayli/weekly NO contempla el total de reuniones llevadas a cabo por el equipo. ***
+Este es un resumen de dayli/weekly NO contempla el total de reuniones llevadas a cabo por el equipo.***
 
 
 ### Resumen reunión del día 3/2/22.
