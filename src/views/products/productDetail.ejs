@@ -45,17 +45,17 @@
 
         <section class="caracteristicas">
             <article>
-                <h3>Caracteristicas generales</h3>
+                <h3>Caracteristicas generales:</h3>
                 <ul>
-                    <li class="color1">Nombre : <%= producto.name%></li>
+                    <li class="color1">Nombre: <%= producto.name%></li>
                     
                     
-                  <li class="color2">Precio : $<%= producto.price%></li>
+                  <li class="color2">Precio: $<%= producto.price%></li>
                   <% if (producto.section) { %>
-                    <li class="color1">Categoria :<%= producto.section%> </li>
-                    <li class="color2">Descripcion :<%= producto.extended_description%> </li>
+                    <li class="color1">Categoria: <%= producto.section%> </li>
+                    <li class="color2">Descripcion: <%= producto.extended_description%> </li>
                   <% }else{ %>
-                    <li class="color1">Descripcion :<%= producto.extended_description%> </li>
+                    <li class="color1">Descripcion: <%= producto.extended_description%> </li>
                    
                  <% }%> 
                    
@@ -67,7 +67,7 @@
         </section>
 
 
-        <br><br><br><br><br><br>
+        <br><br>
         <%- include('../partials/ofertas')%> 
 
 
