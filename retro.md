@@ -3,41 +3,30 @@
 
 ## **Comenzar a hacer**:writing_hand:
 
--Participar más en el grupo
--Incrementar la confianza
--Planificar las reuniones semanales 
--División de tareas equilibrada
+- Trabajar para aplicar mejor los conceptos adquiridos
+- Lograr más equidad en las tareas
+- Tener mas iniciativa 
 
 ## **Hacer más**    :handshake:
 
--Hacer mas activades de práctica
--Comunicarme más con el grupo
--Reafianzar los conceptos
--Tener iniciativa sin sentir temor por la complejidad de la tarea
--Estar al día con las clases del Playground
+- Reforzar el estudio y juntarse a repasar si es necesario
+- Seguir incrementando las reuniones de trabajo
 
 ## **Continuar haciendo**    :muscle:
 
--Seguir trabajando en equipo
--Ayudarnos y apoyarnos cuando nos necesitemos
--Seguir trabajando de forma colaborativa y activa
--Continuar reuniendonos con empeño y energía 
--Buscar la comunicación y escucha activa
--Ayudarnos cuando no entendemos algo
--Proponer ideas que generen avances al proyecto
--Seguir en contacto diario 
+- No dejar de insistir en el trabajo colaborativo
+- Continuar ayudándonos para resolver las tareas 
+- Debatir la estructura y las ideas para la página 
+- Tener iniciativa
 
 
 ## **Hacer menos**  :eyes:
 
--No comunicarse
--No unirse a las reuniones
--No aislarse del equipo
--Confiarse de las tareas
--No pulir el código
+- Confiarse con el tiempo 
+- No practicar
+- No tener organizacion individual y grupal desde el momento que se lanza el sprint
 
 ## **Dejar de hacer** 	:stop_sign:  
 
--No pedir ayuda o consejos de los compañeros
--No comunicar la actividad sobre el proceso del curso
--No afianzar la responsabilidad
+- Esperar a resolver todo en las reuniones y no avanzar de forma individual. Es productivo pero puede ser contraproducente
+- No comunicar si uno esta atrasado
