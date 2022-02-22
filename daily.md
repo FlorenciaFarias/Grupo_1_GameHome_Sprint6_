@@ -1,7 +1,7 @@
 ## :spiral_calendar: Parte de las reuniones que llevamos con el equipo:  :arrow_down: :arrow_down:
 
 ***Para ayudarnos a desarrollar y cumplir con las tareas asignadas individualmente para el Sprint.  
-Este resumen de dayli/weekly NO contempla el total de reuniones llevadas a cabo por el equipo.***
+Este resumen de daily/weekly NO contempla el total de reuniones llevadas a cabo por el equipo.***
 
 
 ### Resumen reunión del día 3/2/22.
