@@ -1,7 +1,7 @@
 ## :spiral_calendar: Parte de las reuniones que llevamos con el equipo:
-1)Para trabajar sobre el proyecto
+*** 1)Para trabajar sobre el proyecto
 2)Para ayudarnos a desarrollar y cumplir con las tareas asignadas individualmente para el Sprint.
-Este es un resumen de dayli/weekly NO contempla el total de reuniones llevadas a cabo por el equipo.
+Este es un resumen de dayli/weekly NO contempla el total de reuniones llevadas a cabo por el equipo. ***
 
 
 ### Resumen reunión del día 3/2/22.
@@ -43,6 +43,7 @@ Este es un resumen de dayli/weekly NO contempla el total de reuniones llevadas a
 
 ### Resumen del día 21/2/02
 - Tema: cierre Sprint 6
+
 :pushpin: Avances:
 1)Luego de arduo trabajo por semanas, se ha logrado completar las tareas de esta etapa con mejoras en el Front y el Back de la página.
 2)En grupo se analizaron los métodos de organización que fuimos teniendo desde el comienzo del curso, las mejorías que obtuvimos y los detalles que aun debemos seguir mejorando, en torno a la retro. Estuvo bueno poder reafianzar la confianza y el compañerismo, en un clima de escucha y respeto, como de costumbre :)
